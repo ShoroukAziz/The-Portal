@@ -1,0 +1,58 @@
+.button
+{
+    -fx-background-color:  #07b7b1;
+    -fx-text-fill: white;
+	-fx-font-size: 24px;
+}
+
+.label
+{
+	
+    -fx-text-fill: white;
+	-fx-font-size: 24px;
+
+}
+#bk
+{
+	-fx-background-color:  #07b7b1;
+    -fx-text-fill: white;
+	-fx-font-size: 13px;
+	
+}
+
+#title
+{
+    -fx-text-fill: white;
+	-fx-font-size: 36px;
+	
+}
+
+#b1
+{
+	-fx-background-color:  #1e1e1e;
+}
+#b2
+{
+	-fx-background-color:  #1e1e1e;
+}
+#b3
+{
+	-fx-background-color:  #1e1e1e;
+}
+#b4
+{
+	-fx-background-color:  #1e1e1e;
+}
+#b5
+{
+	-fx-background-color:  #1e1e1e;
+}
+#b6
+{
+	-fx-background-color:  #1e1e1e;
+}
+#b7
+{
+	-fx-background-color:  #1e1e1e;
+}
+

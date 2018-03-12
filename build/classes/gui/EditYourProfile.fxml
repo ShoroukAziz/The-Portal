@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: white;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.EditYourProfileController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="565.0" style="-fx-background-color: #1e1e1e;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="435.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="updateProfileButton" layoutX="107.0" layoutY="515.0" mnemonicParsing="false" onAction="#handelUbdateProfileButton" prefHeight="41.0" prefWidth="329.0" text="update" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="60.0" layoutY="62.0" stylesheets="@styles.css" text="First Name" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="152.0" text="Last Name" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="242.0" text="Adress" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="332.0" text="User Name" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="422.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstNameFiels" layoutX="64.0" layoutY="100.0" prefHeight="25.0" prefWidth="303.0" />
+            <TextField fx:id="lastNameField" layoutX="64.0" layoutY="190.0" prefHeight="25.0" prefWidth="303.0" />
+            <TextField fx:id="adressField" layoutX="64.0" layoutY="280.0" prefHeight="25.0" prefWidth="303.0" />
+            <TextField fx:id="userNameEditField" layoutX="64.0" layoutY="370.0" prefHeight="25.0" prefWidth="303.0" />
+            <TextField fx:id="passwordEditField" layoutX="64.0" layoutY="455.0" prefHeight="25.0" prefWidth="303.0" />
+            <Button fx:id="bk" layoutX="15.0" layoutY="18.0" mnemonicParsing="false" onAction="#loadDashBoard" text="&lt;&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="546.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="456.0" style="-fx-background-color: #07b7b1;">
+         <children>
+            <ImageView fitHeight="635.0" fitWidth="434.0" layoutX="22.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@media/edityourprofle.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

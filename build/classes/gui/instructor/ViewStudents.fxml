@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: white;" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.instructor.ViewStudentsController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1001.0" style="-fx-background-color: #1e1e1e;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="bk" layoutX="15.0" layoutY="18.0" mnemonicParsing="false" onAction="#loadDashBoard" text="&lt;&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="73.0" layoutY="102.0" text="Select a Course" />
+            <TableView fx:id="studentsTable" layoutX="70.0" layoutY="176.0" prefHeight="379.0" prefWidth="852.0">
+              <columns>
+                <TableColumn fx:id="Id" prefWidth="180.0" text="ID" />
+                <TableColumn fx:id="studentName" prefWidth="705.0" text="Student" />
+              </columns>
+            </TableView>
+            <ComboBox fx:id="selectCourseToViewStudents" layoutX="263.0" layoutY="107.0" onAction="#loadStudents" prefHeight="25.0" prefWidth="475.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

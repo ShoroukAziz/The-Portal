@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: white;" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.student.CourseInfoPrereqController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #1e1e1e;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="bk" layoutX="15.0" layoutY="18.0" mnemonicParsing="false" onAction="#loadCoursesInfo2" style="-fx-background-color: #07b7b1;" text="&lt;&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="title" layoutX="287.0" layoutY="43.0" text="Courses and its Prerequisites" textFill="WHITE">
+               <font>
+                  <Font size="57.0" />
+               </font>
+            </Label>
+            <TableView fx:id="prerequisitesTable" layoutX="79.0" layoutY="126.0" prefHeight="443.0" prefWidth="847.0">
+              <columns>
+                <TableColumn fx:id="course" prefWidth="404.6666564941406" text="Course" />
+                <TableColumn fx:id="prerreq" minWidth="0.0" prefWidth="441.3333435058594" text="prerequisite" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

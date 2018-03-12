@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="viewCourseInfoPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.student.CoursesInfoController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="565.0" style="-fx-background-color: #1e1e1e;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="435.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="bk" layoutX="15.0" layoutY="18.0" mnemonicParsing="false" onAction="#loadDashBoard2" style="-fx-background-color: #07b7b1;" text="&lt;&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="prereqButton" layoutX="35.0" layoutY="181.0" mnemonicParsing="false" onAction="#handelPrereqButton" text="View Courses with prerequisite information" />
+            <Button fx:id="deptInstButton" layoutX="35.0" layoutY="271.0" mnemonicParsing="false" onAction="#handelDeptInstButton" prefHeight="51.0" prefWidth="487.0" text="View courses by department / instructor" />
+            <Button fx:id="dayPeriodButton" layoutX="35.0" layoutY="354.0" mnemonicParsing="false" onAction="#handeDayPeriodButton" prefHeight="51.0" prefWidth="487.0" text="View courses by day / period" />
+         </children>
+      </Pane>
+      <Pane layoutX="546.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="456.0" style="-fx-background-color: #07b7b1;">
+         <children>
+            <ImageView fitHeight="602.0" fitWidth="438.0" layoutX="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@media/coursesInfopic.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+   </children>
+   <stylesheets>
+      <URL value="@styles.css" />
+      <URL value="@../styles.css" />
+   </stylesheets>
+</AnchorPane>
