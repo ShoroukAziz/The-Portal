@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: white;" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.instructor.InstructorScheduleController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #1e1e1e;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="bk" layoutX="15.0" layoutY="18.0" mnemonicParsing="false" onAction="#loadDashBoard" style="-fx-background-color: #07b7b1;" text="&lt;&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="title" layoutX="429.0" layoutY="56.0" text="Schedule" />
+            <TableView fx:id="InstructorScheduleTable" layoutX="35.0" layoutY="125.0" prefHeight="450.0" prefWidth="931.0">
+              <columns>
+                <TableColumn fx:id="sat" prefWidth="182.33334350585938" text="Saturday" />
+                <TableColumn fx:id="sun" prefWidth="170.66665649414062" text="Sunday" />
+                  <TableColumn fx:id="mon" prefWidth="203.6666259765625" text="Monday" />
+                  <TableColumn fx:id="tue" prefWidth="178.6666259765625" text="Tuesday" />
+                  <TableColumn fx:id="wed" prefWidth="197.3333740234375" text="Wednesday" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

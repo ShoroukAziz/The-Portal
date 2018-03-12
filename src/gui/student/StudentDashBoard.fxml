@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="dashBoard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: white;" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.student.StudentDashBoardController">
+   <children>
+      <Pane layoutX="21.0" layoutY="22.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="143.0" prefWidth="1001.0" style="-fx-background-color: #07b7b1;" AnchorPane.bottomAnchor="457.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="nameLabel" layoutX="23.0" layoutY="19.0" text="NAME" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="55.0" text="ID" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="87.0" text="DEPARTMENT" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="idLabel" layoutX="62.0" layoutY="54.0" text="Label" />
+            <Label fx:id="deptLabel" layoutX="194.0" layoutY="87.0" text="Label" />
+            <ImageView fx:id="pic" fitHeight="125.0" fitWidth="112.0" layoutX="834.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+         </children></Pane>
+      <Pane layoutY="141.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="1000.0" style="-fx-background-color: #1e1e1e;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="141.0">
+         <children>
+            <Button fx:id="b7" layoutX="534.0" layoutY="234.0" mnemonicParsing="false" onAction="#loadTranscript">
+               <graphic>
+                  <ImageView fx:id="transcript" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/transcript.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="b3" layoutX="534.0" layoutY="55.0" mnemonicParsing="false" onAction="#loadStudentSchedule">
+               <graphic>
+                  <ImageView fx:id="viewYourSchedule" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/viewYourSchedule.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="b5" layoutX="133.0" layoutY="236.0" mnemonicParsing="false" onAction="#loadCoursesInfo">
+               <graphic>
+                  <ImageView fx:id="coursesInfo" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/coursesinfo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="b6" layoutX="334.0" layoutY="234.0" mnemonicParsing="false" onAction="#loadDropACourse">
+               <graphic>
+                  <ImageView fx:id="dropACourse" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/DropaCourse.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="b2" layoutX="334.0" layoutY="55.0" mnemonicParsing="false" onAction="#loadRegister">
+               <graphic>
+                  <ImageView fx:id="registerACourse" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/registeracourse.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="b4" layoutX="734.0" layoutY="55.0" mnemonicParsing="false" onAction="#HandelRequestGraduation">
+               <graphic>
+                  <ImageView fx:id="requestGraduation" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/requestGraduation.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="b1" layoutX="134.0" layoutY="55.0" mnemonicParsing="false" onAction="#loadEditYourProfile">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/editprofile.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="logOut" layoutX="842.0" layoutY="376.0" mnemonicParsing="false" onAction="#logout" text="Log Out" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
